@@ -1,0 +1,119 @@
+/* - - - - - - - - - - - - - */
+/* R E S E T */
+/* - - - - - - - - - - - - - */
+*, *::before, *::after{
+    box-sizing: border-box; 
+}
+
+*{
+    margin: 0; 
+    padding: 0; 
+}
+
+ul[role='list'], ol[role='list']{
+    list-style: none; 
+}
+
+html:focus-within{
+    scroll-behavior: smooth; 
+}
+
+a:not([class]){
+    text-decoration-skip-ink: auto; 
+}
+
+img, picture, svg, video, canvas{
+    max-width: 100%;
+    height: auto; 
+    vertical-align: middle; 
+    font-style: italic; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+input, button, textarea, select{
+    font: inherit; 
+}
+
+@media (prefers-reduced-motion: reduce){
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition: none;
+    }
+}
+
+body, html{
+    height: 100%; 
+    scroll-behavior: smooth; 
+}
+/* - - - - - - - - - - - - - */
+/* F O N T S */
+/* - - - - - - - - - - - - - */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* - - - - - - - - - - - - - */
+/* V A R I A B L E S */
+/* - - - - - - - - - - - - - */
+:root {
+    --color-1: #0009;
+    --color-2: #fff9;
+    --font-fm: Poppins, sans-serif;
+}
+/* - - - - - - - - - - - - - */
+/* G E N E R A L */
+/* - - - - - - - - - - - - - */
+body {
+    align-items: center;
+    color: var(--color-1);
+    display: flex;
+    font-family: var(--font-fm);
+    justify-content: center;
+    min-height: 100vh;
+    main {
+        header {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            h1 {
+                font-size: 4.5rem;
+                font-weight: 400;
+            }
+            h2 {
+                font-size: 2rem;
+                font-weight: 200;
+                border-bottom: 4px solid var(--color-1)
+            }
+            h3 {
+                border-radius: 20px;
+                background-color: var(--color-1);
+                color: var(--color-2);
+                font-weight: 500;
+                padding: 8px 20px;
+            }
+            img {
+                border-radius: 100px;
+                border: 10px solid var(--color-1);
+                width: 200px;
+            }
+        }
+    }
+}
+/* - - - - - - - - - - - - - */
+/* M A I N   M E N U */
+/* - - - - - - - - - - - - - */
+body.mmenu {
+    background-color: #2294a3;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
