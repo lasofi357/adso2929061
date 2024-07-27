@@ -3,11 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>13- audio</title>
+    <title>15- structure</title>
     <link rel="stylesheet" href="../css/styles.css">
     <style>
-        audio {
-            width: 100%;
+        div.main {
+            border: 2px solid white;
+        }
+        div.main h4 {
+            font-size: 2.4rem;
+        }
+        div.header,
+        div.content,
+        div.footer {
+            border: 2px solid white;
+            display: flex;
+            padding: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+        div.content{
+            background-color: black;
+            height: 240px;
         }
     </style>
 </head>
@@ -19,11 +35,21 @@
     </nav>
     <main>
         <header>
-            <h1>13- audio</h1>
-            <h2>This tag allows you to insert audio</h2>
+            <h1>15- structure</h1>
+            <h2>This tag allows you to create structure site (old style)</h2>
         </header>
         <section>
-            <audio src="audio/sena.mp3" autoplay controls></audio>
+           <div class="main">
+            <div class="header">
+                <h4>header</h4>
+            </div>
+            <div class="content">
+                <h4>content</h4>
+            </div>
+            <div class="footer">
+                <h4>footer</h4>
+            </div>
+           </div>
         </section>
     </main>
 </body>
